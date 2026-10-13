@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b1020" />
+    <title>Quizlet — Kuis Interaktif</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="Quizlet, kembali ke awal">
+          <span class="brand-mark" aria-hidden="true">Q</span>
+          <span>quiz<span class="brand-accent">let</span></span>
+        </a>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Aktifkan mode terang">
+          <span class="theme-icon" aria-hidden="true">☼</span>
+          <span class="theme-label">Mode terang</span>
+        </button>
+      </header>
+
+      <main id="app" class="main-content" aria-live="polite">
+        <section class="welcome-card">
+          <div class="eyebrow"><span class="eyebrow-line"></span> LATIHAN HARI INI</div>
+          <h1>Asah pengetahuanmu,<br /><span>satu soal dalam satu waktu.</span></h1>
+          <p class="intro-copy">
+            Jawab 5 pertanyaan pilihan ganda. Kumpulkan skor terbaikmu dan tantang diri lagi!
+          </p>
+
+          <div class="welcome-stats" aria-label="Informasi kuis">
+            <div class="stat-item">
+              <span class="stat-icon" aria-hidden="true">◷</span>
+              <span><strong>20 detik</strong><small>per pertanyaan</small></span>
+            </div>
+            <span class="stat-divider" aria-hidden="true"></span>
+            <div class="stat-item">
+              <span class="stat-icon stat-icon-pink" aria-hidden="true">✦</span>
+              <span><strong>5 pertanyaan</strong><small>pilihan ganda</small></span>
+            </div>
+            <span class="stat-divider" aria-hidden="true"></span>
+            <div class="stat-item">
+              <span class="stat-icon stat-icon-yellow" aria-hidden="true">♛</span>
+              <span><strong id="welcome-high-score">0 poin</strong><small>skor tertinggi</small></span>
+            </div>
+          </div>
+
+          <button class="primary-button start-button" id="start-button" type="button">
+            Mulai kuis <span aria-hidden="true">→</span>
+          </button>
+          <p class="small-note">Tidak perlu mendaftar. Langsung mulai bermain.</p>
+        </section>
+        <footer class="page-footer">BELAJAR JADI LEBIH SERU <span aria-hidden="true">✦</span></footer>
+      </main>
+    </div>
+  </body>
+</html>
